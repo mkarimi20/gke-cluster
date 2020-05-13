@@ -14,3 +14,4 @@ s3_bucket = "mkarimi-2020_test"                  #Will be used to set backend.tf
 s3_folder_project = "application"            #Will be used to set backend.tf
 s3_folder_region = "us-central1"
 s3_folder_type = "state"                     #Will be used to set backend.tf
+s3_tfstate_file = "infrastructure.tfstate
