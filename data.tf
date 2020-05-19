@@ -1,5 +1,5 @@
 variable "creds" {
-    default = "('{"imagePullSecrets": [{"name":  "regcred"}]}')"
+    default = "'{"imagePullSecrets": ('{"name":  "regcred"}')}'"
   
 }
 
