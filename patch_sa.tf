@@ -1,6 +1,6 @@
-resource “null_resource” “login” {
+resource "null_resource" "login" {
   triggers = {
-    always_run = “${timestamp()}”
+    always_run = "${timestamp()}"
   }
 
   provisioner "local-exec" {
