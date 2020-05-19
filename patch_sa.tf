@@ -9,9 +9,8 @@ resource "null_resource" "login" {
 
   
   provisioner "local-exec" {
-    command = "kubectl patch serviceaccount default -p "${var.creds}""
+    command = "kubectl patch serviceaccount default -p '{"imagePullSecrets": [{"name":  "regcred"}]}' -n prod"
   }
-
   #provisioner “local-exec” {
    # command = “kubectl patch serviceaccount default -p ‘{“imagePullSecrets”: [{“name”:  “nexus-creds”}]}’ -n qa”
   #}
